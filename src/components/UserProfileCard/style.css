@@ -1,0 +1,73 @@
+body {
+    background-color: #ffff;
+    font-family: Montserrat, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.card {
+    padding: 15px;
+    width: 350px;
+    background: #222;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+    user-select: none;
+}
+
+.card__cover-photo {
+    position: relative;
+    background: url(https://i.imgur.com/jxyuizJ.jpeg);
+    background-size: cover;
+    height: 180px;
+    border-radius: 5px 5px 0 0;
+}
+
+.card__profile {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    bottom: -60px;
+    left: 15px;
+    border-radius: 50%;
+    border: 2px solid #222;
+    background: #222;
+    padding: 5px;
+}
+
+.card__profile-name {
+    font-size: 20px;
+    margin: 8px 0 0 77px;
+    color: #fff;
+}
+
+.card__about {
+    margin-top: 30px;
+    line-height: 1.6;
+    text-overflow: ellipsis
+}
+
+.card_email-container {
+    height: 16px;
+}
+
+.card__btn {
+    width: 100%;
+    margin: 30px 0px;
+    background: #7ce3ff;
+    font-weight: bold;
+    font-family: Montserrat;
+    cursor: pointer;
+    color: #222;
+    transition: 0.2s;
+    letter-spacing: 1px;
+}
+
+.card__btn:hover {
+    background: #7ce3ff;
+    color: #222;
+}
